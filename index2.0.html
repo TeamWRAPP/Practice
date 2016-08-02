@@ -1039,6 +1039,43 @@ COPPA is a law created to protect the privacy of children under 13.
        </div>
       </div>
 
+      <?php
+              // Takes in 3 values
+              // Connect to MySQL database
+              $dbc = mysql_connect('localhost','root','TeamWrapp');
+              if(!$dbc) {
+                             die('Not connected : ' . mysql_error());
+              }
+
+              // Select DB
+              $db_selected = mysql_select_db("P1", $dbc);
+              if(!$db_selected) {
+                             die("Can't connect : " . mysql_error());
+              }
+
+              // Code if you wanted to search for a specific user
+              $sqlSelect = 'SELECT * FROM activelist';
+              $records = mysql_query($sqlSelect);
+
+              while($user1 = mysql_fetch_assoc($records)) {
+                             if($user1['Name'] == 'IRS') {
+                                           // Debugging purposes to see if it prints out correctly 
+                                           echo $user1['Name']."\n";
+                                           echo $user1['URL']."\n";
+                             }
+              }
+
+              // Replace the CIA stuff with the user inputs from HTML
+              $sqlInsert = 'INSERT INTO activelist '.'(Name, URL, P1, P2, P3, P4, P5, P6, P7, P8, Overall) '.'VALUES ("CIA", "cia.gov", 53.30, 59.12, 82.19, 63.69, 94.21, 69.32, 32.50, 21.60, 40.00) ';
+              $retval = mysql_query($sqlInsert);
+              if(!$retval) {
+                             die('Could not enter data : ' . mysql_error());
+              }
+              echo "Entered data successfully\n";
+              mysql_close();
+?>
+
+
 
       <div class="tab-pane fade" id="step10">
         <div class="well"> 
@@ -1052,6 +1089,7 @@ COPPA is a law created to protect the privacy of children under 13.
     <tr>
       <td colspan="3" id="overall">Overall Score:</td>
       <td id="score">Not Completed!</td>
+      </tr>
     <tr>
       <th>Pillar</th>
       <th>Sub-Pillar</th>
@@ -1230,10 +1268,15 @@ COPPA is a law created to protect the privacy of children under 13.
 
   </thead>
   </table>
-</tr>
+
 </section>
 </div>
 <br><br><br><br>
+
+
+
+
+
 <div id="alist">
 <section class="activelist">
 <div  class="tbl-norm">
@@ -1266,214 +1309,50 @@ COPPA is a law created to protect the privacy of children under 13.
   </thead>
 </table>
 </div>
-<div  class="tbl-content">
-<table cellpadding="0" cellspacing="0" border="0">
-  <tbody>
-    <tr>
-      <td class="wide">IRS</td>
-      <td class="wide"><a href="#">irs.gov</a></td>
-      <td>55</td>
-      <td>86</td>
-      <td>95</td>
-      <td>48</td>
-      <td>52</td>
-      <td>85</td>
-      <td>68</td>
-      <td>51</td>
-      <td class="os">75</td>
-    </tr>
-    <tr>
-      <td>IRS</td>
-      <td><a href="#">irs.gov</a></td>
-      <td>55</td>
-      <td>86</td>
-      <td>95</td>
-      <td>48</td>
-      <td>52</td>
-      <td>85</td>
-      <td>68</td>
-      <td>51</td>
-      <td class="os">75</td>
-    </tr><tr>
-      <td>IRS</td>
-      <td><a href="#">irs.gov</a></td>
-      <td>55</td>
-      <td>86</td>
-      <td>95</td>
-      <td>48</td>
-      <td>52</td>
-      <td>85</td>
-      <td>68</td>
-      <td>51</td>
-      <td class="os">75</td>
-    </tr><tr>
-      <td>IRS</td>
-      <td><a href="#">irs.gov</a></td>
-      <td>55</td>
-      <td>86</td>
-      <td>95</td>
-      <td>48</td>
-      <td>52</td>
-      <td>85</td>
-      <td>68</td>
-      <td>51</td>
-      <td class="os">75</td>
-    </tr><tr>
-      <td>IRS</td>
-      <td><a href="#">irs.gov</a></td>
-      <td>55</td>
-      <td>86</td>
-      <td>95</td>
-      <td>48</td>
-      <td>52</td>
-      <td>85</td>
-      <td>68</td>
-      <td>51</td>
-      <td class="os">75</td>
-    </tr><tr>
-      <td>IRS</td>
-      <td><a href="#">irs.gov</a></td>
-      <td>55</td>
-      <td>86</td>
-      <td>95</td>
-      <td>48</td>
-      <td>52</td>
-      <td>85</td>
-      <td>68</td>
-      <td>51</td>
-      <td class="os">75</td>
-    </tr><tr>
-      <td>IRS</td>
-      <td><a href="#">irs.gov</a></td>
-      <td>55</td>
-      <td>86</td>
-      <td>95</td>
-      <td>48</td>
-      <td>52</td>
-      <td>85</td>
-      <td>68</td>
-      <td>51</td>
-      <td class="os">75</td>
-    </tr><tr>
-      <td>IRS</td>
-      <td><a href="#">irs.gov</a></td>
-      <td>55</td>
-      <td>86</td>
-      <td>95</td>
-      <td>48</td>
-      <td>52</td>
-      <td>85</td>
-      <td>68</td>
-      <td>51</td>
-      <td class="os">75</td>
-    </tr><tr>
-      <td>IRS</td>
-      <td><a href="#">irs.gov</a></td>
-      <td>55</td>
-      <td>86</td>
-      <td>95</td>
-      <td>48</td>
-      <td>52</td>
-      <td>85</td>
-      <td>68</td>
-      <td>51</td>
-      <td class="os">75</td>
-    </tr><tr>
-      <td>IRS</td>
-      <td><a href="#">irs.gov</a></td>
-      <td>55</td>
-      <td>86</td>
-      <td>95</td>
-      <td>48</td>
-      <td>52</td>
-      <td>85</td>
-      <td>68</td>
-      <td>51</td>
-      <td class="os">75</td>
-    </tr><tr>
-      <td>IRS</td>
-      <td><a href="#">irs.gov</a></td>
-      <td>55</td>
-      <td>86</td>
-      <td>95</td>
-      <td>48</td>
-      <td>52</td>
-      <td>85</td>
-      <td>68</td>
-      <td>51</td>
-      <td class="os">75</td>
-    </tr><tr>
-      <td>IRS</td>
-      <td><a href="#">irs.gov</a></td>
-      <td>55</td>
-      <td>86</td>
-      <td>95</td>
-      <td>48</td>
-      <td>52</td>
-      <td>85</td>
-      <td>68</td>
-      <td>51</td>
-      <td class="os">75</td>
-    </tr><tr>
-      <td>IRS</td>
-      <td><a href="#">irs.gov</a></td>
-      <td>55</td>
-      <td>86</td>
-      <td>95</td>
-      <td>48</td>
-      <td>52</td>
-      <td>85</td>
-      <td>68</td>
-      <td>51</td>
-      <td class="os">75</td>
-    </tr><tr>
-      <td>IRS</td>
-      <td><a href="#">irs.gov</a></td>
-      <td>55</td>
-      <td>86</td>
-      <td>95</td>
-      <td>48</td>
-      <td>52</td>
-      <td>85</td>
-      <td>68</td>
-      <td>51</td>
-      <td class="os">75</td>
-    </tr><tr>
-      <td>IRS</td>
-      <td><a href="#">irs.gov</a></td>
-      <td>55</td>
-      <td>86</td>
-      <td>95</td>
-      <td>48</td>
-      <td>52</td>
-      <td>85</td>
-      <td>68</td>
-      <td>51</td>
-      <td class="os">75</td>
-    </tr>
-  </tbody>
-</table>
 
-</div>
+
+<?php
+              // Takes in 3 values
+              // Connect to MySQL database
+              $dbc = mysql_connect('localhost','root','TeamWrapp');
+              if(!$dbc) {
+                             die('Not connected : ' . mysql_error());
+              }
+
+if $dbc->connect_error) {
+  die("Connection failed: " .$dbc->connect_error);
+}
+
+$sql = "SELECT D, TITLE, URL, P1, P2, P3, P4, P5, P6, P7, P8, 0S FROM Results";
+$result = $dbc->query($sql);
+
+if ($result->num_rows > 0) {
+  echo "<div  class="tbl-content"><table cellpadding="0" cellspacing="0" border="0"><tbody>";
+  while($row = $result->fetch_assoc()) {
+    echo "<tr><td>".$row["D"]."</td><td class="wide">".$row["TITLE"]."</td><td class="wide">".$row["URL"]."</td><td>".$row["P1"]."</td><td>".$row["P2"]."</td><td>".$row["P3"]."</td><td>".$row["P4"]."</td><td>".$row["P5"]."</td><td>".$row["P6"]."</td><td>".$row["P7"]."</td><td>".$row["P8"]."</td><td class="os">".$row["OS"]."</td></tr>";
+  }
+  echo "</tbody></table></div>";
+} else {
+  echo "<h3>None to list yet</h3>";
+}
+$dbc->close();
+?>
+
+
 </section>
 </div>
 <p id="activecap">OS stands for "Overall Score"</p>
-        </div>
+        <div>
          <a class="btn btn-success first" href="" onClick="window.location.reload()" data-ng-click="goNext(0)">Start over</a>
       </div>
-   </div>
+   
   
 
+
+
   
-</div>
 
-
-
-
-
-        
-        <!-- JavaScript jQuery code from Bootply.com editor  -->
-        
+       
         <script type='text/javascript'>
         
             var myApp = angular.module('myApp', []);
