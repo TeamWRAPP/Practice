@@ -705,6 +705,7 @@ Definition from <a href="https://moz.com/beginners-guide-to-seo">https://moz.com
   <div class="answers" ng-init="forums=.1">
     <input type="radio" name="forums" ng-model="forums" value=".1" id="6.61" required>Yes
     <input type="radio" name="forums" ng-model="forums" value="0" id="6.62">No
+    <input type="radio" name="forums" ng-model="forums" value=".1" id="6.61">Not Applicable 
 </div>
 </div>
 
@@ -883,9 +884,9 @@ COPPA is a law created to protect the privacy of children under 13.
     <input type="radio" name="international" ng-model="international" value=".1" id="7.45">Not Applicable
   </div>
   <ul class="abstract">Please refer to the following for common examples:
-       <li>Asia Pacific (APAC)</li>
+       <li><a href="http://www.lexology.com/library/detail.aspx?g=1d6e5a73-614b-4d70-9451-5166bfb47384">Asia Pacific (APAC)</a></li>
       <li><a href="http://www.ema.europa.eu/docs/en_GB/document_library/Other/2010/01/WC500070046.pdf">Europe (EMEA) Regulations</a></li>
-      <li>Americas</li>
+      <li><a href="http://cloudtimes.org/2012/11/21/data-protection-privacy-issues-latin-america/">Americas</a></li>
   </ul>
 </div>
 
@@ -1039,47 +1040,11 @@ COPPA is a law created to protect the privacy of children under 13.
        </div>
       </div>
 
-      <?php
-              // Takes in 3 values
-              // Connect to MySQL database
-              $dbc = mysql_connect('localhost','root','TeamWrapp');
-              if(!$dbc) {
-                             die('Not connected : ' . mysql_error());
-              }
-
-              // Select DB
-              $db_selected = mysql_select_db("P1", $dbc);
-              if(!$db_selected) {
-                             die("Can't connect : " . mysql_error());
-              }
-
-              // Code if you wanted to search for a specific user
-              $sqlSelect = 'SELECT * FROM activelist';
-              $records = mysql_query($sqlSelect);
-
-              while($user1 = mysql_fetch_assoc($records)) {
-                             if($user1['Name'] == 'IRS') {
-                                           // Debugging purposes to see if it prints out correctly 
-                                           echo $user1['Name']."\n";
-                                           echo $user1['URL']."\n";
-                             }
-              }
-
-              // Replace the CIA stuff with the user inputs from HTML
-              $sqlInsert = 'INSERT INTO Results '.'(D, TITLE, URL, NAME EMAIL, P1, P2, P3, P4, P5, P6, P7, P8, OS) '.'VALUES ("08/02/2016", "IMF", "imf.gov", "imf@usa.gov", 55.30, 58.12, 88.19, 93.69, 84.21, 49.32, 72.50, 11.60, 60.00) ';
-              $retval = mysql_query($sqlInsert);
-              if(!$retval) {
-                             die('Could not enter data : ' . mysql_error());
-              }
-              echo "Entered data successfully\n";
-              mysql_close();
-?>
 
 
-
-      <div class="tab-pane fade" id="step10">
-        <div class="well"> 
-            <div id="report">
+<div class="tab-pane fade" id="step10">
+<div class="well"> 
+<div id="report">
 <section class="the-report"> <!--for demo wrap-->
 
 
@@ -1264,18 +1229,65 @@ COPPA is a law created to protect the privacy of children under 13.
       <td>8.5 Parallax Scrolling</td>
       <td>15%</td>
     </tr>
-    </div>
+   
 
   </thead>
   </table>
 
 </section>
+
 </div>
 <br><br><br><br>
+<div> 
+<div id="prior1">
+<p id="suggest"></p>
+  <ol>
+    <li>dfd</li>
+  </ol>
+</div>
 
+<div id="prior2">
+  <ol>
 
+  </ol>
+</div>
 
+<div id="prior3">
+  <ol>
 
+  </ol>
+</div>
+
+<div id="prior4">
+  <ol>
+
+  </ol>
+</div>
+
+<div id="prior5">
+  <ol>
+
+  </ol>
+</div>
+
+<div id="prior6">
+  <ol>
+
+  </ol>
+</div>
+
+<div id="prior7">
+  <ol>
+
+  </ol>
+</div>
+
+<div id="prior8">
+  <ol>
+
+  </ol>
+</div>
+</div>
 
 <div id="alist">
 <section class="activelist">
@@ -1294,7 +1306,7 @@ COPPA is a law created to protect the privacy of children under 13.
     <table cellpadding="0" cellspacing="0" border="0">
     <thead>
     <tr>
-      <th>Date</th>
+      <th class="wide">Date</th>
       <th class="wide">Name</th>
       <th class="wide">URL</th>
       <th>P1</th>
@@ -1311,35 +1323,196 @@ COPPA is a law created to protect the privacy of children under 13.
 </table>
 </div>
 
-<?php
-        //Enter your code here, enjoy!
 
- // Takes in 3 values
-              // Connect to MySQL database
-              $dbc = mysql_connect('localhost','root','TeamWrapp');
-              if(!$dbc) {
-                             die('Not connected : ' . mysql_error());
-              }
-<!-- 
-if ($dbc->connect_error) {
-  die("Connection failed: " .$dbc->connect_error);
-} -->
+<div  class="tbl-content">
+<table cellpadding="0" cellspacing="0" border="0">
+  <tbody>
+    <tr>
+      <td class="wide">IRS</td>
+      <td class="wide"><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr>
+    <tr>
+      <td>IRS</td>
+      <td><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr><tr>
+      <td>IRS</td>
+      <td><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr><tr>
+      <td>IRS</td>
+      <td><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr><tr>
+      <td>IRS</td>
+      <td><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr><tr>
+      <td>IRS</td>
+      <td><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr><tr>
+      <td>IRS</td>
+      <td><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr><tr>
+      <td>IRS</td>
+      <td><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr><tr>
+      <td>IRS</td>
+      <td><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr><tr>
+      <td>IRS</td>
+      <td><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr><tr>
+      <td>IRS</td>
+      <td><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr><tr>
+      <td>IRS</td>
+      <td><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr><tr>
+      <td>IRS</td>
+      <td><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr><tr>
+      <td>IRS</td>
+      <td><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr><tr>
+      <td>IRS</td>
+      <td><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr>
+  </tbody>
+</table>
 
-$sql = "SELECT D, TITLE, URL, P1, P2, P3, P4, P5, P6, P7, P8, 0S FROM Results";
-$result = mysql_query($sql);
-
-if ($result->num_rows > 0) {
-  echo "<div  class='tbl-content'><table cellpadding='0' cellspacing='0' border='0'><tbody>";
-  while($row = $result->fetch_assoc()) {
-    echo "<tr><td>".$row["D"]."</td><td class='wide'>".$row["TITLE"]."</td><td class='wide'>".$row["URL"]."</td><td>".$row["P1"]."</td><td>".$row["P2"]."</td><td>".$row["P3"]."</td><td>".$row["P4"]."</td><td>".$row["P5"]."</td><td>".$row["P6"]."</td><td>".$row["P7"]."</td><td>".$row["P8"]."</td><td class='os'>".$row["OS"]."</td></tr>";
-  }
-  echo "</tbody></table></div>";
-} else {
-  echo "<h3>None to list yet</h3>";
-}
-$dbc->close();
-?>
-
+</div>
 
 </section>
 </div>
@@ -1431,6 +1604,87 @@ var tp6 = 0;
 var tp7 = 0;
 var tp8 = 0;
 var total = 0;
+var numRad = $("input[type=radio]").length;
+var radArray = new Array(); 
+var string = "";
+var rads = 0;
+var noTable = new Array(['1.12','Needs to improve Responsiveness sccore to be 85 or greater'],
+                                              ['1.22','Needs Multilingual Feature'],
+                                              ['1.34', 'Needs to improve Browser Compatibility'],
+                                              ['1.42', 'Needs 508 Compliance'],
+                                              ['2.12', 'Needs "About Us" Page'],
+                                              ['2.14', 'Needs "FAQ" Page'],
+                                              ['2.16', 'Needs "Contact" page'],
+                                              ['2.18', 'Needs a 404 Error Page'],
+                                              ['2.22', 'Needs to be Checked from Grammar and Spelling Errors'],
+                                              ['2.32', 'Needs to Provide Citations'],
+                                              ['2.34', 'Needs to Provide Accurate and Up-to-date Content and Information'],
+                                              ['2.36', 'Needs to Provide Informative News Articles'],
+                                              ['2.38', 'Needs to be Transparent'],
+                                              ['2.301', 'Needs to have a Relevant and Accurate Mission'],
+                                              ['2.42', 'Needs Hyperlinks'],
+                                              ['2.44', 'Needs to Break up Text with Multimedia'],
+                                              ['2.46', 'Needs an Obvious End Goal and Purpose of the Site'],
+                                              ['2.52', 'Needs a Content Management System'],
+                                              ['3.12', 'Needs a Search Bar'],
+                                              ['3.14', 'Needs a Visible and Accessible Search Bar on Every Page'],
+                                              ['3.22', 'Needs a Logical User Path'],
+                                              ['3.32', 'Needs Additional Links'],
+                                              ['3.34', 'Needs to Show Top Search'],
+                                              ['3.42', 'Needs a Clear Website Logo on Every Page'],
+                                              ['4.12', 'Website Should Customize Ads and Suggest a Path Based on User Location'],
+                                              ['4.14', 'Website Should Tailor Information to a User\'s Location'],
+                                              ['4.22', 'Website Should Have a Profile that Retains a User\'s Personal Information'],
+                                              ['4.24', 'Website Should use Security Protocol\'s for Authentication and Authorization'],
+                                              ['4.32', 'Website Should Consider Cookie Usage to Enhance User Experience'],
+                                              ['4.34', 'Website Should use Stored Cookies for Active Recommendations'],
+                                              ['4.42', 'Website Should use an Autofill Predictive Analytic'],
+                                              ['4.52', 'Website Should Show User Progress in a Form or for Shipment'],
+                                              ['4.54', 'Website Should Provide Live Tracking Capabilities'],
+                                              ['5.12', 'CSS and Javascript Should be Minified on Website'],
+                                              ['5.14', 'Website Should Reduce Files to Smaller Sizes'],
+                                              ['5.16', 'Website Needs to Adjust Speed that is more suitable for the user base'],
+                                              ['5.21', 'Website Needs to Speed up Multimedia Load Time'],
+                                              ['5.32', 'Website Should Collect and Store Data Analytics'],
+                                              ['5.42', 'Website needs to have active and functioning links'],
+                                              ['6.12', 'Website should have feedback section where users can post comments/suggestions'],
+                                              ['6.22', 'Website should use a mailing list serve that users can subscribe to'],
+                                              ['6.32', 'Website needs to enhance social media presence on a variety of suitable platforms'],
+                                              ['6.34', 'Website needs to improve visible links to the site\'s social media accounts'],
+                                              ['6.42', 'Website needs to provide a confirmation page or alert for form completion, submission etc.'],
+                                              ['6.52', 'Website should have a live chat feature that answers questions/concerns directly from users'],
+                                              ['6.62', 'Website should have a community board or instant chat for user base interaction'],
+                                              ['7.12', 'Website should be compliant with NIST 800-53'],
+                                              ['7.14', 'Website should be compliant with NIST 800-122'],
+                                              ['7.16', 'Website should be compliant with the Privacy Act of 1974'],
+                                              ['7.18', '7.18 Website should be compliant with the Paperwork Reduction Act of 1995'],
+                                              ['7.191', 'Website should be compliant with the E-Government Act of 2002'],
+                                              ['7.193', 'Website should be compliant with the Office of Management and Budget'],
+                                              ['7.195', 'Website should be compliant with the Children\'s Online Privacy Protection Act'],
+                                              ['7.22', 'There should be staff who update protocols and scan for possible vulnerabilities in the website'],
+                                              ['7.24', 'Staff should frequently check for threats to the system and constantly update the site'],
+                                              ['7.26', 'Staff should establish risk tests and protocols to effectively mitigate possible risk'],
+                                              ['7.28', 'Staff should analyze the privacy practices of the website to ensure that user information is appropriately secure'],
+                                              ['7.291', 'Staff should review preventative security protocols to stop Distributed Denial of Service (DDOS)'],
+                                              ['7.32','Website should have an appropriate framework in place for authorization and authentication if it collects Personal Identifiable Information (PII)'],
+                                              ['7.34', 'Website should continually maintain user PII and allow user choice by offering the option to unsubscribe'],
+                                              ['8.12', 'The website should have an internal design team'],
+                                              ['8.13', 'The internal design team should use web analytics and ongoing feedback to continuously improve the site\'s design'],
+                                              ['8.22', 'The call to action of the website (for example, a "get started" button), should be presented immediately and above the fold of the front page'],
+                                              ['8.24', 'The menu bar and contact information should be visible on every subsequent page of the website'],
+                                              ['8.26', 'Every subsequent page of the website should follow a consistent design'],
+                                              ['8.28', 'All buttons on the website should have a consistent color, style, shape, or texture'],
+                                              ['8.291', 'The website should implement a flat and minimalist design format'],
+                                              ['8.293', 'The website should have a menu that is hamburger style that provides intuitive and user-friendly navigation'],
+                                              ['8.32', 'Every page should have a consistent and simple typography and font'],
+                                              ['8.34', 'The size and color of the font should be suitable to the targeted user base'],
+                                              ['8.36', 'The colors and text used on the website should comply with the WCAG AA 2.0 guidelines'],
+                                              ['8.38', 'The website should display large headings and options for "further reading" or "read more" if there are large amounts of text'],
+                                              ['8.42', 'The website should have custom HD images as opposed to stock images'],
+                                              ['8.44', 'The website should have a loading page animation'],
+                                              ['8.46', 'The website should use hover animation over text and multimedia'],
+                                              ['8.52', 'The website should employ parallax scrolling']);
+
 
 
 
@@ -1652,7 +1906,17 @@ function pillaPriority(checkArray){
 
 
 
+function P1State() {
+  numOfRad = $('input[name="responsive"]').length;
+  radArray1 = new Array();
 
+  for(i = 0; i <= numOfRad; i ++) {
+    if($('input[name="responsive"]:checked').val() == 0) {
+      radArray1[i] = "The site needs to be more Responsive!"
+    }
+  }
+  alert(radArray1);
+}
 
 
 function info() {
@@ -1824,23 +2088,15 @@ document.getElementById("p1").innerHTML = p1 + "%";
 var tT = (tp1 + tp2 + tp3 + tp4 + tp5 + tp6 + tp7 + tp8);
 total = tT.toFixed(2);
 document.getElementById("score").innerHTML = total + "%";
- if ($('input[name="multiling"]:checked').length < 1) {
-    // do something here
-    alert("Please Select one!");
+// alert("something");
+//  if ($('input[name="multiling"]:checked').length < 1) {
+//     // do something here
+//     alert("Please Select one!");
     
+// }
 }
 
 
- 
-     // $("input[type=radio]").each(function() {
-    //   var arry = [];
-    //   var i = 0;
-    //   arry.push($(this).val(i));
-    //   alert($(arry.val(i)));
-    //   i = i++;
-    //     });
-    // alert($(arry).val());
-};
 
 function Pilla2() {
 Validation();
@@ -2080,10 +2336,28 @@ $('#submittin').prop('disabled', false);
 
 document.getElementById("score").innerHTML = total + "%";
 
+$("input[type=radio]:checked").each(function(){
+
+  radArray[i] = $( this ).val();  
+            i += 1;
+            rads += 1;
+});
+    alert(radArray)
+    var count = 0;
+    for(var k = 0; k <= rads; k++) {
+      if(radArray[k] == 0){
+        string = string + "\n" + noTable[k];
+      } else {
+        count += 1;
+      }
+    } alert(string);
+
+    document.getElementById("suggest").innerHTML = "<p>" + string + "</p>";
+};
 
 insertEntry(name,url,title,p1,p2,p3,p4,p5,p6,p7,p8,total,UserCMS);
 
-}
+
 
 function insertEntry(name,url,title,p1,p2,p3,p4,p5,p6,p7,p8,total,UserCMS){
 
