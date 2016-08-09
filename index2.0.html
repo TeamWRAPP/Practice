@@ -141,7 +141,7 @@ Enter Company/Agency's Name:<input type="text" ng-model="name" name="title" plac
             <div class="formdivs" id="responsive">
 <h2>1.1 - Responsiveness</h2>
 
-  <p>Does the website receive a score of 85 or greater in the "Mobile Friendliness" category on Google's <a href="https://testmysite.thinkwithgoogle.com/">PageSpeed Insights tool</a>?<br>
+  <p>Does the website receive a score of 85 or greater in the "Mobile Friendliness" category on Google's <a href="https://testmysite.thinkwithgoogle.com/" target="_blank">PageSpeed Insights tool</a>?<br>
   <span class="readit">When inserting the URL of the website on PageSpeed Insights, make sure to include the http or https. (e.g. http://www.benefits.gov)</span></breaktext>
   <div class="answers" ng-init="responsive=.5">
     <input type="radio" name="responsive" ng-model="responsive" required value=".5"> Yes
@@ -180,7 +180,7 @@ Enter Company/Agency's Name:<input type="text" ng-model="name" name="title" plac
     <input type="radio" name="browser" ng-model="browser" value="0">Poor
 </div>
 
-  <p class="caption">If unsure, please check this tool to determine the website's broswer compatibility: <a href="http://browsershots.org/" class="wrapplink">Browser Compatibility Tool</a></p> 
+  <p class="caption">If unsure, please check this tool to determine the website's broswer compatibility: <a href="http://browsershots.org/" class="wrapplink" target="_blank">Browser Compatibility Tool</a></p> 
 
 
   <p class="abstract">
@@ -196,7 +196,7 @@ Enter Company/Agency's Name:<input type="text" ng-model="name" name="title" plac
     <input type="radio" name="508" id="r1" ng-model="five" value=".35" required>Yes
     <input type="radio" name="508" ng-model="five" value="0">No
   </div>
-  <p class="caption">If unsure, please check this checklist to determine whether is does: <a href="https://pages.18f.gov/accessibility/checklist/" class="wrapplink">508 Guidelines</a></p>
+  <p class="caption">If unsure, please check this checklist to determine whether is does: <a href="https://pages.18f.gov/accessibility/checklist/" class="wrapplink" target="_blank">508 Guidelines</a></p>
 
   <p class="abstract">
   Section 508 details the accessibility standards for federal websites so that all users, regardless of disability status, can access technology. 
@@ -261,7 +261,7 @@ Enter Company/Agency's Name:<input type="text" ng-model="name" name="title" plac
     <input type="radio" name="proofread" ng-model="proofread" value=".1" id="2.21" required>Yes
     <input type="radio" name="proofread" ng-model="proofread" id="2.22" value="0">No
   </div>
-  <p class="caption">If unsure, please check this tool to check for spelling or grammar errors: <a href="https://www.grammarly.com/?AT3383=2"  class="wrapplink">Grammarly Tool</a></p>
+  <p class="caption">If unsure, please check this tool to check for spelling or grammar errors: <a href="https://www.grammarly.com/?AT3383=2"  class="wrapplink" target="_blank">Grammarly Tool</a></p>
   <p class="abstract">
   Grammarly is an online Chrome browser extension that improves communication by helping users find and correct grammar and spelling mistakes.
   </p>
@@ -296,7 +296,7 @@ Enter Company/Agency's Name:<input type="text" ng-model="name" name="title" plac
     <input type="radio" name="transparent" ng-model="transparent" id="2.37" value=".05" required>Yes
     <input type="radio" name="transparent" ng-model="transparent" id="2.38" value="0">No
   </div>
-    <p class="caption">If unsure, please check this 10-point Government Transparency <a href="https://ballotpedia.org/Transparency_checklist">checklist</a></p> <br>
+    <p class="caption">If unsure, please check this 10-point Government Transparency <a href="https://ballotpedia.org/Transparency_checklist" target="_blank">checklist</a></p> <br>
 
   <p>Is the website's mission statement relevant and accurate for the website's intended goal?</p>
   <div class="answers" ng-init="mission=.05">
@@ -555,7 +555,7 @@ Enter Company/Agency's Name:<input type="text" ng-model="name" name="title" plac
     <input type="radio" name="reduced" ng-model="reduced" value="0" id="5.14">No
 </div>
 
-   <p>Does the website receive a score of 65 or higher in the "Mobile Speed" & "Desktop Speed" categories on Google's <a href="https://testmysite.thinkwithgoogle.com/">PageSpeed Insights tool</a>?<br>
+   <p>Does the website receive a score of 65 or higher in the "Mobile Speed" & "Desktop Speed" categories on Google's <a href="https://testmysite.thinkwithgoogle.com/" target="_blank">PageSpeed Insights tool</a>?<br>
   <span class="readit">When inserting the URL of the website on PageSpeed Insights, make sure to include the http or https. (e.g. http://www.benefits.gov)</span></breaktext>
   <div class="answers" ng-init="reasonable=.066">
     <input type="radio" name="reasonablespeed" ng-model="reasonable" value=".066" id="5.15" required>Yes
@@ -570,8 +570,8 @@ Enter Company/Agency's Name:<input type="text" ng-model="name" name="title" plac
 
   <p>Is there lag for mutltimedia load?</p>
   <div class="answers" ng-init="loadtime=.2"> 
-    <input type="radio" name="loadtime" ng-model="loadtime" value=".2" id="5.21" required>Yes
-    <input type="radio" name="loadtime" ng-model="loadtime" value="0" id="5.22">No
+    <input type="radio" name="loadtime" ng-model="loadtime" value="0" id="5.21" required>Yes
+    <input type="radio" name="loadtime" ng-model="loadtime" value=".2" id="5.22">No
 </div>
 </div>
 
@@ -599,7 +599,7 @@ Enter Company/Agency's Name:<input type="text" ng-model="name" name="title" plac
     <input type="radio" name="activelinks" ng-model="activelinks" value=".15" id="5.41" required>Yes
     <input type="radio" name="activelinks" ng-model="activelinks" value="0" id="5.42">No
   </div>
-    <p class="caption">If unsure, please use the following <a href="https://chrome.google.com/webstore/detail/check-my-links/ojkcdipcgfaekbeaelaapakgnjflfglf?hl=en-GB" class="wrapplink">"Check My Links"</a> tool.</p>
+    <p class="caption">If unsure, please use the following <a href="https://chrome.google.com/webstore/detail/check-my-links/ojkcdipcgfaekbeaelaapakgnjflfglf?hl=en-GB" class="wrapplink" target="_blank">"Check My Links"</a> tool.</p>
     <p class="abstract">The "Check My Links" tool is a link checker that crawls through your webpage and looks for broken links.</p>
 
 </div>
@@ -608,14 +608,14 @@ Enter Company/Agency's Name:<input type="text" ng-model="name" name="title" plac
 <h2>5.5 - Search Engine Optimization (SEO)</h2>
 <p class="caption">SEO is a marketing discipline focused on growing visibility in organic (non-paid) search engine results. SEO encompasses both the technical and creative elements required to improve rankings, drive traffic, and increase awareness in search engines. There are many aspects to SEO, from the words on your page to the way other sites link to you on the web. Sometimes SEO is simply a matter of making sure your site is structured in a way that search engines understand.
 SEO isn't just about building search engine-friendly websites. It's about making your site better for people too. <br>
-Definition from <a href="https://moz.com/beginners-guide-to-seo">https://moz.com/beginners-guide-to-seo</a></p>
+Definition from <a href="https://moz.com/beginners-guide-to-seo" target="_blank">https://moz.com/beginners-guide-to-seo</a></p>
 
   <p>Does the website include key words that allow the user to find the site easily? (2-4 keyword search terms)</p>
   <div class="answers" ng-init="seo=.1">
     <input type="radio" name="seo" ng-model="seo" value=".1" id="5.51" required>Yes
     <input type="radio" name="seo" ng-model="seo" value="0" id="5.52">No
   </div>
-        <p class="caption">If desired, please use any of <a href="https://moz.com/tools">these tools</a> offered by Moz.com to better understand and improve upon the website's SEO.</p>
+        <p class="caption">If desired, please use any of <a href="https://moz.com/tools" target="_blank">these tools</a> offered by Moz.com to better understand and improve upon the website's SEO.</p>
 
 </div>
 
@@ -705,6 +705,7 @@ Definition from <a href="https://moz.com/beginners-guide-to-seo">https://moz.com
   <div class="answers" ng-init="forums=.1">
     <input type="radio" name="forums" ng-model="forums" value=".1" id="6.61" required>Yes
     <input type="radio" name="forums" ng-model="forums" value="0" id="6.62">No
+    <input type="radio" name="forums" ng-model="forums" value=".1" id="6.61">Not Applicable 
 </div>
 </div>
 
@@ -740,7 +741,7 @@ Definition from <a href="https://moz.com/beginners-guide-to-seo">https://moz.com
     <input type="radio" name="800-53" ng-model="fedprivacy" value=".05" id="7.11" required>Yes
     <input type="radio" name="800-53" ng-model="fedprivacy" value="0" id="7.12">No
   </div>
-    <p class="caption">If unsure, please refer to <a href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf" class="wrapplink">NIST 800-53 guidelines</a></p>
+    <p class="caption">If unsure, please refer to <a href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf" class="wrapplink" target="_blank">NIST 800-53 guidelines</a></p>
   <p class="abstract">NIST 800-53 (Appendix J), "Security and Privacy Controls for Federal Information Systems and Organizations," provides a catalog of security controls for all U.S. federal information systems except those related to national security.
   </p>
         
@@ -749,7 +750,7 @@ Definition from <a href="https://moz.com/beginners-guide-to-seo">https://moz.com
     <input type="radio" name="800-122" ng-model="fedISO" value=".05" id="7.13" required>Yes
     <input type="radio" name="800-122" ng-model="fedISO" value="0" id="7.14">No
   </div>
-    <p class="caption">If unsure, please refer to <a href="http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-122.pdf" class="wrapplink">NIST 800-122 guidelines</a></p>
+    <p class="caption">If unsure, please refer to <a href="http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-122.pdf" class="wrapplink" target="_blank">NIST 800-122 guidelines</a></p>
 <p class="abstract">
 NIST 800-122, "Guide to Protecting the Confidentiality of Personally Identifiable Information," provides agencies with guidelines for a risk-based approach to protecting the confidentiality of personally identifiable information (PII). </p>
 
@@ -759,7 +760,7 @@ NIST 800-122, "Guide to Protecting the Confidentiality of Personally Identifiabl
     <input type="radio" name="privacyact" ng-model="privacyact" value=".05" id="7.15" required>Yes
     <input type="radio" name="privacyact" ng-model="privacyact" value="0" id="7.16">No
   </div>
-    <p class="caption">If unsure, please refer to <a href="https://www.gpo.gov/fdsys/pkg/USCODE-2012-title5/pdf/USCODE-2012-title5-partI-chap5-subchapII-sec552a.pdf" class="wrapplink"> Privacy Act of 1974</a></p>
+    <p class="caption">If unsure, please refer to <a href="https://www.gpo.gov/fdsys/pkg/USCODE-2012-title5/pdf/USCODE-2012-title5-partI-chap5-subchapII-sec552a.pdf" class="wrapplink" target="_blank"> Privacy Act of 1974</a></p>
 <p class="abstract">
 The Privacy Act of 1974 establishes a code of fair information practices that governs the collection, maintenance, use, and dissemination of information about individuals that is maintained in systems of records by federal agencies.</p>
 
@@ -769,7 +770,7 @@ The Privacy Act of 1974 establishes a code of fair information practices that go
     <input type="radio" name="paperwork" ng-model="paperwork" value=".05" id="7.17" required>Yes
     <input type="radio" name="paperwork" ng-model="paperwork" value="0" id="7.18">No
   </div>
-    <p class="caption">If unsure, please refer to <a href="http://www.hhs.gov/ocio/policy/collection/" class="wrapplink"> Paperwork Reduction Act</a></p>
+    <p class="caption">If unsure, please refer to <a href="http://www.hhs.gov/ocio/policy/collection/" class="wrapplink" target="_blank"> Paperwork Reduction Act</a></p>
 <p  class="abstract">
 The Paperwork Reduction Act (1995) requires that agencies obtain Office of Management and Budget (OMB) approval before requesting most types of information from the public.
 </p>
@@ -779,7 +780,7 @@ The Paperwork Reduction Act (1995) requires that agencies obtain Office of Manag
     <input type="radio" name="egovernment" ng-model="egovernment" value=".05" id="7.19" required>Yes
     <input type="radio" name="egovernment" ng-model="egovernment" value="0" id="7.191">No
   </div>
-    <p class="caption">If unsure, please refer to <a href="https://www.gpo.gov/fdsys/pkg/STATUTE-116/pdf/STATUTE-116-Pg2899.pdf" class="wrapplink">E-Government Act of 2002</a></p>
+    <p class="caption">If unsure, please refer to <a href="https://www.gpo.gov/fdsys/pkg/STATUTE-116/pdf/STATUTE-116-Pg2899.pdf" class="wrapplink" target="_blank">E-Government Act of 2002</a></p>
 <p  class="abstract">
 The E-Government Act of 2002 is a statute whose purpose is to improve the management and promotion of electronic government services and processes by establishing a framework of measures that require using Internet-based information technology to improve citizen access to government information and services.
 </p>
@@ -789,7 +790,7 @@ The E-Government Act of 2002 is a statute whose purpose is to improve the manage
     <input type="radio" name="OMB" ng-model="OMB" value=".05" id="7.192" required>Yes
     <input type="radio" name="OMB" ng-model="OMB" value="0" id="7.193">No
   </div>
-    <p class="caption">If unsure, please refer to <a href="https://www.whitehouse.gov/omb/privacy_general" class="wrapplink">OMB</a></p>
+    <p class="caption">If unsure, please refer to <a href="https://www.whitehouse.gov/omb/privacy_general" class="wrapplink" target="_blank">OMB</a></p>
 
 <p class="abstract">
  The OMB details multiple guidelines regarding privacy and inter-agency sharing of personal data.
@@ -800,7 +801,7 @@ The E-Government Act of 2002 is a statute whose purpose is to improve the manage
     <input type="radio" name="COPPA" ng-model="COPPA" value=".05" id="7.194" required>Yes
     <input type="radio" name="COPPA" ng-model="COPPA" value="0" id="7.195">No
   </div>
-    <p class="caption">If unsure, please refer to <a href="https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/childrens-online-privacy-protection-rule" class="wrapplink">COPPA</a></p>
+    <p class="caption">If unsure, please refer to <a href="https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/childrens-online-privacy-protection-rule" class="wrapplink" target="_blank">COPPA</a></p>
 
 <p class="abstract">
 COPPA is a law created to protect the privacy of children under 13.
@@ -851,7 +852,7 @@ COPPA is a law created to protect the privacy of children under 13.
     <input type="radio" name="PII" ng-model="PII" value="0" id="7.32">No
     <input type="radio" name="PII" ng-model="PII" value=".1" id="7.31">Not Applicable
   </div>
-  <p class="abstract">For a definition of what is considered Personal Identifiable Information, please reference the <a href="http://csrc.nist.gov/publications/nistpubs/800-122/sp800-122.pdf">NIST 800-122 guidelines</a></p>
+  <p class="abstract">For a definition of what is considered Personal Identifiable Information, please reference the <a href="http://csrc.nist.gov/publications/nistpubs/800-122/sp800-122.pdf" target="_blank">NIST 800-122 guidelines</a></p>
 
   <p>Is the website continually maintaining user PII and allowing user choice (option to unsubscribe)?</p>
   <div class="answers" ng-init="unsubscribe=.1">
@@ -866,8 +867,8 @@ COPPA is a law created to protect the privacy of children under 13.
 
   <p> Are the users automatically opted in to data collection, or can they opt out upfront?</p>
   <div class="answers" ng-init="optout=.1">
-    <input type="radio" name="optout" ng-model="optout" value=".1" id="7.41" required>Yes
-    <input type="radio" name="optout" ng-model="optout" value="0" id="7.42">No
+    <input type="radio" name="optout" ng-model="optout" value=".1" id="7.41" required>Opt Out Offered
+    <input type="radio" name="optout" ng-model="optout" value="0" id="7.42">Opt Out Not Offered
   </div>
 
   <p>Does your website connect with a secure socket layer for HTTPS?</p>
@@ -883,9 +884,9 @@ COPPA is a law created to protect the privacy of children under 13.
     <input type="radio" name="international" ng-model="international" value=".1" id="7.45">Not Applicable
   </div>
   <ul class="abstract">Please refer to the following for common examples:
-       <li>Asia Pacific (APAC)</li>
-      <li><a href="http://www.ema.europa.eu/docs/en_GB/document_library/Other/2010/01/WC500070046.pdf">Europe (EMEA) Regulations</a></li>
-      <li>Americas</li>
+       <li><a href="http://www.lexology.com/library/detail.aspx?g=1d6e5a73-614b-4d70-9451-5166bfb47384" target="_blank">Asia Pacific (APAC)</a></li>
+      <li><a href="http://www.ema.europa.eu/docs/en_GB/document_library/Other/2010/01/WC500070046.pdf" target="_blank">Europe (EMEA) Regulations</a></li>
+      <li><a href="http://cloudtimes.org/2012/11/21/data-protection-privacy-issues-latin-america/" target="_blank">Americas</a></li>
   </ul>
 </div>
 
@@ -985,7 +986,7 @@ COPPA is a law created to protect the privacy of children under 13.
     <input type="radio" name="WCAG" ng-model="WCAG" value=".05" id="8.35" required>Yes
     <input type="radio" name="WCAG" ng-model="WCAG" value="0" id="8.36">No
   </div>
-  <p class="abstract">If unsure, please reference the guidelines <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-scale">here</a>.</p>
+  <p class="abstract">If unsure, please reference the guidelines <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-scale" target="_blank">here</a>.</p>
         
     <p>Does the website display large headings and options for "Further Reading" or "Read More" for large amounts of text?</p>
   <div class="answers" ng-init="readmore=.05">
@@ -1039,47 +1040,11 @@ COPPA is a law created to protect the privacy of children under 13.
        </div>
       </div>
 
-      <?php
-              // Takes in 3 values
-              // Connect to MySQL database
-              $dbc = mysql_connect('localhost','root','TeamWrapp');
-              if(!$dbc) {
-                             die('Not connected : ' . mysql_error());
-              }
-
-              // Select DB
-              $db_selected = mysql_select_db("P1", $dbc);
-              if(!$db_selected) {
-                             die("Can't connect : " . mysql_error());
-              }
-
-              // Code if you wanted to search for a specific user
-              $sqlSelect = 'SELECT * FROM activelist';
-              $records = mysql_query($sqlSelect);
-
-              while($user1 = mysql_fetch_assoc($records)) {
-                             if($user1['Name'] == 'IRS') {
-                                           // Debugging purposes to see if it prints out correctly 
-                                           echo $user1['Name']."\n";
-                                           echo $user1['URL']."\n";
-                             }
-              }
-
-              // Replace the CIA stuff with the user inputs from HTML
-              $sqlInsert = 'INSERT INTO activelist '.'(Name, URL, P1, P2, P3, P4, P5, P6, P7, P8, Overall) '.'VALUES ("CIA", "cia.gov", 53.30, 59.12, 82.19, 63.69, 94.21, 69.32, 32.50, 21.60, 40.00) ';
-              $retval = mysql_query($sqlInsert);
-              if(!$retval) {
-                             die('Could not enter data : ' . mysql_error());
-              }
-              echo "Entered data successfully\n";
-              mysql_close();
-?>
 
 
-
-      <div class="tab-pane fade" id="step10">
-        <div class="well"> 
-            <div id="report">
+<div class="tab-pane fade" id="step10">
+<div class="well"> 
+<div id="report">
 <section class="the-report"> <!--for demo wrap-->
 
 
@@ -1264,18 +1229,36 @@ COPPA is a law created to protect the privacy of children under 13.
       <td>8.5 Parallax Scrolling</td>
       <td>15%</td>
     </tr>
-    </div>
+   
 
   </thead>
   </table>
 
 </section>
+
 </div>
 <br><br><br><br>
+<div> 
+<div id="suggest">
+<h2>Recommendations:</h2>
+  <ol id="list">
+  <!-- <li>Needs to display top searches</li>
+  <li>Website should have a profile that retains a user’s personal information</li>
+  <li>Website should use an autofill predictive analytic</li>
+  <li>Website should use stored cookies for active recommendations</li>
+  <li>Website should provide live tracking capabilities</li>
+  <li>Website needs to adjust speed that is more suitable for the user base</li>
+  <li>Website should collect and store data analytics</li>
+  <li>Website should use a mailing list serve that users can subscribe to</li>
+  <li>Website should have a live chat feature that answers questions/concerns directly from users</li>
+  <li>Users need to have the opportunity to opt out up front</li>
+  <li>Should begin using HTTPS</li>
+  <li>The website should have loading page animation</li> -->
+  
+  </ol>
+</div>
 
-
-
-
+</div>
 
 <div id="alist">
 <section class="activelist">
@@ -1294,6 +1277,7 @@ COPPA is a law created to protect the privacy of children under 13.
     <table cellpadding="0" cellspacing="0" border="0">
     <thead>
     <tr>
+      <th class="wide">Date</th>
       <th class="wide">Name</th>
       <th class="wide">URL</th>
       <th>P1</th>
@@ -1311,40 +1295,184 @@ COPPA is a law created to protect the privacy of children under 13.
 </div>
 
 
-<?php
-              // Takes in 3 values
-              // Connect to MySQL database
-              $dbc = mysql_connect('localhost','root','TeamWrapp');
-              if(!$dbc) {
-                             die('Not connected : ' . mysql_error());
-              }
+<div  class="tbl-content">
+<table cellpadding="0" cellspacing="0" border="0">
+  <tbody>
+  <tr>
+      <td class="wide">08/04/16</td>
+      <td class="wide">Benefits.gov</td>
+      <td class="wide"><a href="#">benefits.gov</a></td>
+      <td>99</td>
+      <td>100</td>
+      <td>95</td>
+      <td>45</td>
+      <td>58</td>
+      <td>70</td>
+      <td>80</td>
+      <td>93</td>
+      <td class="os">80</td>
+    </tr>
+  <tr>
+      <td class="wide">08/04/16</td>
+      <td class="wide">Benefits.gov</td>
+      <td class="wide"><a href="#">benefits.gov</a></td>
+      <td>99</td>
+      <td>100</td>
+      <td>95</td>
+      <td>45</td>
+      <td>58</td>
+      <td>70</td>
+      <td>80</td>
+      <td>93</td>
+      <td class="os">80</td>
+    </tr>
+    <tr>
+      <td class="wide">08/04/16</td>
+      <td class="wide">IRS</td>
+      <td class="wide"><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">57</td>
+    </tr>
+    <tr>
+      <td class="wide">08/03/16</td>
+      <td class="wide">Central Intelligence Agency</td>
+      <td class="wide"><a href="#">cia.gov</a></td>
+      <td>72</td>
+      <td>92</td>
+      <td>76</td>
+      <td>85</td>
+      <td>76</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">75</td>
+    </tr><tr>
+      <td class="wide">08/03/16</td>
+      <td class="wide">Benefits.gov</td>
+      <td class="wide"><a href="#">benefits.gov</a></td>
+      <td>99</td>
+      <td>100</td>
+      <td>95</td>
+      <td>45</td>
+      <td>58</td>
+      <td>70</td>
+      <td>80</td>
+      <td>93</td>
+      <td class="os">80</td>
+    </tr><tr>
+      <td class="wide">08/02/16</td>
+      <td class="wide">Department of Labor</td>
+      <td class="wide"><a href="#">dol.gov</a></td>
+      <td>98</td>
+      <td>95</td>
+      <td>88</td>
+      <td>65</td>
+      <td>76</td>
+      <td>82</td>
+      <td>95</td>
+      <td>54</td>
+      <td class="os">72</td>
+    </tr><tr>
+      <td class="wide">08/02/16</td>
+      <td class="wide">Recreation.gov</td>
+      <td class="wide"><a href="#">recreation.gov</a></td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>88</td>
+      <td>92</td>
+      <td>92</td>
+      <td>98</td>
+      <td>100</td>
+      <td class="os">95</td>
+    </tr><tr>
+      <td class="wide">08/02/16</td>
+      <td class="wide">White House</td>
+      <td class="wide"><a href="#">whitehouse.gov</a></td>
+      <td>100</td>
+      <td>100</td>
+      <td>95</td>
+      <td>68</td>
+      <td>92</td>
+      <td>84</td>
+      <td>100</td>
+      <td>88</td>
+      <td class="os">87</td>
+    </tr><tr>
+      <td class="wide">08/01/16</td>
+      <td class="wide">Data.gov</td>
+      <td class="wide"><a href="#">data.gov</a></td>
+      <td>100</td>
+      <td>98</td>
+      <td>88</td>
+      <td>54</td>
+      <td>72</td>
+      <td>32</td>
+      <td>97</td>
+      <td>88</td>
+      <td class="os">72</td>
+    </tr><tr>
+      <td class="wide">08/01/16</td>
+      <td class="wide">Booz Allen Hamilton</td>
+      <td class="wide"><a href="#">bah.com</a></td>
+      <td>100</td>
+      <td>99</td>
+      <td>95</td>
+      <td>87</td>
+      <td>91</td>
+      <td>76</td>
+      <td>69</td>
+      <td>82</td>
+      <td class="os">88</td>
+    </tr><tr>
+      <td class="wide">07/31/16</td>
+      <td class="wide">IRS</td>
+      <td class="wide"><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">57</td>
+    </tr><tr>
+      <td class="wide">07/25/16</td>
+      <td class="wide">IRS</td>
+      <td class="wide"><a href="#">irs.gov</a></td>
+      <td>55</td>
+      <td>86</td>
+      <td>95</td>
+      <td>48</td>
+      <td>52</td>
+      <td>85</td>
+      <td>68</td>
+      <td>51</td>
+      <td class="os">57</td>
+    </tr>
+  </tbody>
+</table>
 
-if $dbc->connect_error) {
-  die("Connection failed: " .$dbc->connect_error);
-}
-
-$sql = "SELECT D, TITLE, URL, P1, P2, P3, P4, P5, P6, P7, P8, 0S FROM Results";
-$result = $dbc->query($sql);
-
-if ($result->num_rows > 0) {
-  echo "<div  class="tbl-content"><table cellpadding="0" cellspacing="0" border="0"><tbody>";
-  while($row = $result->fetch_assoc()) {
-    echo "<tr><td>".$row["D"]."</td><td class="wide">".$row["TITLE"]."</td><td class="wide">".$row["URL"]."</td><td>".$row["P1"]."</td><td>".$row["P2"]."</td><td>".$row["P3"]."</td><td>".$row["P4"]."</td><td>".$row["P5"]."</td><td>".$row["P6"]."</td><td>".$row["P7"]."</td><td>".$row["P8"]."</td><td class="os">".$row["OS"]."</td></tr>";
-  }
-  echo "</tbody></table></div>";
-} else {
-  echo "<h3>None to list yet</h3>";
-}
-$dbc->close();
-?>
-
+</div>
 
 </section>
 </div>
 <p id="activecap">OS stands for "Overall Score"</p>
-        <div>
+</div>
+        <div class="startova">
          <a class="btn btn-success first" href="" onClick="window.location.reload()" data-ng-click="goNext(0)">Start over</a>
       </div>
+      <img src="wrapplogo.png" alt="WRAPP Logo" class="wrapplogo">
+        <img src="booz-allen-logo.png" alt="Booz Allen Hamilton Logo" class="boozlogo">
+
    
   
 
@@ -1358,14 +1486,14 @@ $dbc->close();
             var myApp = angular.module('myApp', []);
             var r = 0;
 function Main($scope, $http){
-  var i = 1;
-  $scope.goNext = function(i){
+  var p = 1;
+  $scope.goNext = function(p){
 
   if(r < 5) {
     Validation();
   }
   else {
-    $('[href=#step'+(i+1)+']').tab('show');
+    $('[href=#step'+(p+1)+']').tab('show');
   
     return false;
   }
@@ -1394,7 +1522,7 @@ $(document).ready(function() {
 
   
 })(jQuery);  
-
+  var p1Priority = 1, p2Priority = 3, p3Priority = 5, p4Priority = 7;
   var p5Priority = 0, p6Priority = 0, p7Priority = 0, p8Priority = 0; 
   var userPillar8 = [2, 4, 6, 8];
 
@@ -1429,6 +1557,10 @@ var tp6 = 0;
 var tp7 = 0;
 var tp8 = 0;
 var total = 0;
+var numRad = $("input[type=radio]").length;
+var rads = 0;
+
+
 
 
 
@@ -1650,7 +1782,17 @@ function pillaPriority(checkArray){
 
 
 
+function P1State() {
+  numOfRad = $('input[name="responsive"]').length;
+  radArray1 = new Array();
 
+  for(i = 0; i <= numOfRad; i ++) {
+    if($('input[name="responsive"]:checked').val() == 0) {
+      radArray1[i] = "The site needs to be more Responsive!"
+    }
+  }
+//   alert(radArray1);
+}
 
 
 function info() {
@@ -1676,9 +1818,8 @@ function info() {
 
 
 
-  name = $('input[name="name"]').val();
-  url = $('input[name="url"]').val();
-  title = $('input[name="title"]').val();
+
+  
 
   document.getElementById("Atitle").innerHTML = title;
 
@@ -1822,23 +1963,15 @@ document.getElementById("p1").innerHTML = p1 + "%";
 var tT = (tp1 + tp2 + tp3 + tp4 + tp5 + tp6 + tp7 + tp8);
 total = tT.toFixed(2);
 document.getElementById("score").innerHTML = total + "%";
- if ($('input[name="multiling"]:checked').length < 1) {
-    // do something here
-    alert("Please Select one!");
+// alert("something");
+//  if ($('input[name="multiling"]:checked').length < 1) {
+//     // do something here
+//     alert("Please Select one!");
     
+// }
 }
 
 
- 
-     // $("input[type=radio]").each(function() {
-    //   var arry = [];
-    //   var i = 0;
-    //   arry.push($(this).val(i));
-    //   alert($(arry.val(i)));
-    //   i = i++;
-    //     });
-    // alert($(arry).val());
-};
 
 function Pilla2() {
 Validation();
@@ -1999,6 +2132,98 @@ document.getElementById("score").innerHTML = total + "%";
 function Pilla8(){
   Validation();
 
+var radArray = new Array(); 
+var finalState = new Array();
+
+var noTable = [['1','Needs to improve Responsiveness score to be 85 or greater'], 
+                                              ['1','Needs multilingual feature'], 
+                                              ['1', 'Needs to improve browser compatibility'], 
+                                              ['1', 'Needs to be 508 compliant'], 
+                                              ['2', 'Needs "About Us" page'], 
+                                              ['2', 'Needs "FAQ" page'], 
+                                              ['2', 'Needs "Contact" page'], 
+                                              ['2', 'Needs a "404 Error" page'], 
+                                              ['2', 'Needs to be checked for grammar and spelling errors'], 
+                                              ['2', 'Needs to provide citations'], 
+                                              ['2', 'Needs to provide accurate and up-to-date content'], 
+                                              ['2', 'Needs to provide informative news articles'], 
+                                              ['2', 'Needs to be transparent'], 
+                                              ['2', 'Needs to have a relevant and accurate mission'], 
+                                              ['2', 'Needs hyperlinks'], 
+                                              ['2', 'Needs to break up text with multimedia'], 
+                                              ['2', 'Needs an obvious end goal and purpose of the site'], 
+                                              ['2', 'Needs a Content Management System'], 
+                                              ['3', 'Needs a search bar'], 
+                                              ['3', 'Needs a visible and accessible search bar on every page'], 
+                                              ['3', 'Needs a logical user path'], 
+                                              ['3', 'Needs additional links'], 
+                                              ['3', 'Needs to show top searches'], 
+                                              ['3', 'Needs a clear website logo on every page'], 
+                                              ['4', 'Website should customize ads and suggest a path based on user location'], 
+                                              ['4', 'Website should tailor information to a user\'s location'], 
+                                              ['4', 'Website should have a profile that retains a user\'s personal information'], 
+                                              ['4', 'Website should use security protocol\'s for authentication and authorization'], 
+                                              ['4', 'Website should consider cookie usage to enhance user experience'], 
+                                              ['4', 'Website should use stored cookies for active recommendations'], 
+                                              ['4', 'Website should use an autofill predictive analytic'], 
+                                              ['4', 'Website should show user progress in a form and provides status updates'], 
+                                              ['4', 'Website should provide live tracking capabilities'], 
+                                              ['5', 'CSS and Javascript should be minified on website'], 
+                                              ['5', 'Website should reduce files to smaller sizes'], 
+                                              ['5', 'Website needs to enhance speed'], 
+                                              ['5', 'Website needs to speed up multimedia load time'], 
+                                              ['5', 'Website should collect and store data analytics'], 
+                                              ['5', 'Website should store data that easily accessible and updated frequently'], 
+                                              ['5', 'Website needs to have active and functioning links'], 
+                                              ['5', 'Consider including key words to increase SEO'], 
+                                              ['6', 'Website should have feedback section where users can post comments/suggestions'], 
+                                              ['6', 'Website should use a mailing list serve that users can subscribe to'], 
+                                              ['6', 'Website needs to enhance social media presence on a variety of suitable platforms'], 
+                                              ['6', 'Website needs to improve visible links to the site\'s social media accounts'], 
+                                              ['6', 'Website needs to provide a confirmation page or alert for form completion, submission etc.'], 
+                                              ['6', 'Website should have a live chat feature that answers questions/concerns directly from users'], 
+                                              ['6', 'Website should have a community board or instant chat for user base interaction'], 
+                                              ['7', 'Website should be compliant with NIST 800-53'], 
+                                              ['7', 'Website should be compliant with NIST 800-122'], 
+                                              ['7', 'Website should be compliant with the Privacy Act of 1974'], 
+                                              ['7', 'Website should be compliant with the Paperwork Reduction Act of 1995'], 
+                                              ['7', 'Website should be compliant with the E-Government Act of 2002'], 
+                                              ['7', 'Website should be compliant with the Office of Management and Budget'], 
+                                              ['7', 'Website should be compliant with the Children\'s Online Privacy Protection Act'], 
+                                              ['7', 'There should be staff who update protocols and scan for possible vulnerabilities in the website'], 
+                                              ['7', 'Staff should frequently check for threats to the system and constantly update the site'], 
+                                              ['7', 'Staff should establish risk tests and protocols to effectively mitigate possible risk'], 
+                                              ['7', 'Staff should analyze the privacy practices of the website to ensure that user information is appropriately secure'], 
+                                              ['7', 'Staff should review preventative security protocols to stop Distributed Denial of Service (DDOS)'], 
+                                              ['7','Website should have an appropriate framework in place for authorization and authentication if it collects Personal Identifiable Information (PII)'], 
+                                              ['7', 'Website should continually maintain user PII and allow user choice by offering the option to unsubscribe'], 
+                                              ['7', 'It should be transparent that users have the option to opt out of data collection'], 
+                                              ['7', 'Website should be using HTTPS'], 
+                                              ['7', 'Website should comply with International Guidelines'], 
+                                              ['8', 'The website should have an internal design staff'], 
+                                              ['8', 'The internal design staff should use web analytics and ongoing feedback to continuously improve the site\'s design'], 
+                                              ['8', 'The call to action of the website (for example, a "get started" button), should be presented immediately and above the fold of the front page'], 
+                                              ['8', 'The menu bar and contact information should be visible on every subsequent page of the website'], 
+                                              ['8', 'Every subsequent page of the website should follow a consistent design'], 
+                                              ['8', 'All buttons on the website should have a consistent color, style, shape, or texture'], 
+                                              ['8', 'The website should implement a flat and minimalist design format'], 
+                                              ['8', 'The website should have a menu that is hamburger style that provides intuitive and user-friendly navigation'], 
+                                              ['8', 'Every page should have a consistent and simple typography and font'], 
+                                              ['8', 'The size and color of the font should be suitable to the targeted user base'], 
+                                              ['8', 'The colors and text used on the website should comply with the WCAG AA 2.0 guidelines'], 
+                                              ['8', 'The website should display large headings and options for "further reading" or "read more" if there are large amounts of text'], 
+                                              ['8', 'The website should have custom HD images as opposed to stock images'], 
+                                              ['8', 'The website should have a loading page animation'], 
+                                              ['8', 'The website should use hover animation over text and multimedia'], 
+                                              ['8', 'The website should employ parallax scrolling']]; 
+
+
+
+
+
+
+
+
   var team = $('input[name="team"]:checked').val();
   var webdata = $('input[name="webdata"]:checked').val();
   var action = $('input[name="action"]:checked').val();
@@ -2077,11 +2302,178 @@ total = tT.toFixed(2);
 $('#submittin').prop('disabled', false);
 
 document.getElementById("score").innerHTML = total + "%";
+radArray = [];
+
+$("input[type=radio]:checked").each(function(){
+  
+  if(typeof ($(this).val()) == "undefined"){
+    alert($(this).val());
+  } else {
+  radArray.push($( this ).val());  
+            rads += 1;
+          }
+});
+
+    var pStatements = new Array();
+    var count = 0;
+    for(var k = 0; k < radArray.length; k++) {
+      if(radArray[k] == 0){
+        // alert("this is k" + k);
+        pStatements.push(noTable[k]);
+      } else {
+        count += 1;
+      }
+    } 
+    
+    // // alert(p5Priority);
+    // alert(p6Priority);
+    // alert(p7Priority);
+    // alert(p8Priority);
+// alert(weights + "BEFORE");
+
+//     var weights = new Array(['1', p1Percent],
+//                             ['2', p2Percent],
+//                             ['3', p3Percent],
+//                             ['4', p4Percent],
+//                             ['5', p5Percent],
+//                             ['6', p6Percent],
+//                             ['7', p7Percent],
+//                             ['8', p8Percent])
+
+//     weights.sort(function(a,b) {
+//       return a[1] < b[1];
+//     });
+//     alert("this is it sorted" + weights)
+
+
+
+var newpStatement = new Array();
+alert(pStatements[1]);
+for(var z = 0; z < pStatements.length; z++) {
+              var temp3 = pStatements[z];
+              if((pStatements[z][0]) == '1') {
+                             temp3.push(p1Percent);
+              }
+              else if((pStatements[z][0]) == '2') {
+                             temp3.push(p2Percent);
+              }
+              else if((pStatements[z][0]) == '3') {
+                             temp3.push(p3Percent);
+              }
+              else if((pStatements[z][0]) == '4') {
+                             temp3.push(p4Percent);
+              }
+              else if((pStatements[z][0]) == '5') {
+                             temp3.push(p5Percent);
+              }
+              else if((pStatements[z][0]) == '6') {
+                             temp3.push(p6Percent);
+              }
+              else if((pStatements[z][0]) == '7') {
+                             temp3.push(p7Percent);
+              }
+              else if((pStatements[z][0]) == '8') {
+                             temp3.push(p8Percent);
+              }
+
+              newpStatement.push(temp3);
+}
+
+     newpStatement.sort(function(a,b) {
+      return a[2] < b[2];
+    });
+     alert(newpStatement);
+
+    // for(var h = 0; h < pStatements.length; h++) {
+    //   var temp = (pStatements[h][0]);
+    //   if(temp[0].charAt(0) == p1Priority.toString()) {
+    //     finalState.push(pStatements[h][1]);
+    //   } 
+    //   if(temp[0].charAt(0) == p2Priority.toString()) {
+    //     finalState.push(pStatements[h][1]);
+    //   } 
+    //   if(temp[0].charAt(0) == p3Priority.toString()) {
+    //     finalState.push(pStatements[h][1]);
+    //   } 
+    //   if(temp[0].charAt(0) == p4Priority.toString()) {
+    //     finalState.push(pStatements[h][1]);
+    //   } 
+    //   if(temp[0].charAt(0) == p5Priority.toString()) {
+    //     finalState.push(pStatements[h][1]);
+    //   } 
+    //   if(temp[0].charAt(0) == p6Priority.toString()) {
+    //     finalState.push(pStatements[h][1]);
+    //   } 
+    //   if(temp[0].charAt(0) == p7Priority.toString()) {
+    //     finalState.push(pStatements[h][1]);
+    //   } 
+    //   if(temp[0].charAt(0) == p8Priority.toString()) {
+    //     finalState.push(pStatements[h][1]);
+    //   } 
+    //     alert(finalState);
+    // }  
+    
+// for(var f = 0; f < finalState.length; f++) {
+//       document.getElementById("suggest").innerHTML +=  "<li>" + (finalState[f][1]).toString() + "</li>";
+//     }
+var kk = "";
+
+ for(f = 0; f < newpStatement.length; f++){
+        var list = (newpStatement[f][1]);
+        kk += "<li>"+list+"</li>"
+        alert(kk);
+
+    }
+var MyList = document.getElementById('list');        
+MyList.innerHTML = kk;
+alert(kk);
+
+
+
+};
+function sendResults() {
+
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+
+if(dd<10) {
+    dd='0'+dd
+} 
+
+if(mm<10) {
+    mm='0'+mm
+} 
+
+today = mm+'/'+dd+'/'+yyyy;
+
+
+function post() {
+              var date = today;
+              title = $('input[name="title"]').val();
+              url = $('input[name="url"]').val();
+              name = $('input[name="name"]').val();
+              var P1 = tp1;
+              var P2 = tp2;
+              var P3 = tp3;
+              var P4 = tp4
+              var P5 = tp5;
+              var P6 = tp6;
+              var P7 = tp7;
+              var P8 = tp8;
+              var OS = total;
+$.post('insertResult.php',{postD:date,postTITLE:title,postURL:url,postNAME:name,postP1:P1,postP2:P2,postP3:P3,postP4:P4,postP5:P5,postP6:P6,postP7:P7,postP8:P8,postOS:OS}, 
+                             function(result) {
+                                           alert(result);
+                             });
+}
+};
 
 
 insertEntry(name,url,title,p1,p2,p3,p4,p5,p6,p7,p8,total,UserCMS);
 
-}
+
 
 function insertEntry(name,url,title,p1,p2,p3,p4,p5,p6,p7,p8,total,UserCMS){
 
